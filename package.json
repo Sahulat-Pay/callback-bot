@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "node call.js"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "node-schedule": "^2.1.1"
+  }
+}
