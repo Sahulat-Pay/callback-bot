@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "node call.js"
+    "dev": "node call.js"
   },
   "dependencies": {
     "axios": "^1.8.4",
