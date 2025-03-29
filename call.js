@@ -1,5 +1,12 @@
 const axios = require('axios');
 const schedule = require('node-schedule');
+const express = require('express')
+const app = express()
+const port = process.env.PORT || 4000;
+
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`)
+})
 
 // Configuration
 const MERCHANT_IDS = [5, 51]; // Add your merchant IDs
