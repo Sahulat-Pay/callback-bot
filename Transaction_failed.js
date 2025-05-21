@@ -118,7 +118,7 @@ const handleTransaction = async (order) => {
         let inquiryStatusCode = inquiryResponse?.data?.data?.statusCode;
 
         if (!inquiryStatus || inquiryStatus === "failed" || inquiryStatusCode === 500) {
-          await retry(() => axios.post(FAIL_API_URL, { transactionIds: [merchantTransactionId] }));
+          // await retry(() => axios.post(FAIL_API_URL, { transactionIds: [merchantTransactionId] }));
           //console.log(`[${commandId}] Transaction ${merchantTransactionId} marked as failed.`);
           logMessage(`${merchantTransactionId} Status: Failed.`);
           return;
