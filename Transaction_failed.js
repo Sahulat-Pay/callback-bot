@@ -11,7 +11,7 @@ app.listen(port, () => {
 const CALLBACK_API_URL = "https://server.sahulatpay.com/backoffice/payin-callback";
 const SETTLE_API_URL = "https://server.sahulatpay.com/backoffice/settle-transactions/tele";
 const FAIL_API_URL = "https://server.sahulatpay.com/backoffice/fail-transactions/tele";
-const FETCH_API_URL = "https://api.sahulatpay.com/transactions/tele/last-2-mins?status=failed";
+const FETCH_API_URL = "https://api.sahulatpay.com/transactions/tele/last-4-mins?status=failed";
 
 // List for transactions
 let transaction = [];
